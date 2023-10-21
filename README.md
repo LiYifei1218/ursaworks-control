@@ -1,7 +1,9 @@
 # ursaworks-control
 
-> Dont run '''lbuild build''' if you are not sure what it does, that might update your local taproot
-environment which our code base does not currently support.
+
+
+**Dont run '''lbuild build''' if you are not sure what it does, that might update your local taproot
+environment which our code base does not currently support.**
 
 ## New user guide
 
