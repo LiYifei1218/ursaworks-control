@@ -2,7 +2,7 @@
 
 
 
-**Dont run `lbuild build`` if you are not sure what you are doing. Doing so might update your local taproot
+**Dont run `lbuild build` if you are not sure what you are doing. Doing so might update your local taproot
 environment which our code base does not currently support.**
 
 ## New user guide
