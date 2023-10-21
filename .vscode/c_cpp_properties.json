@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "name": "Test",
+            "defines": ["${default}", "ENV_UNIT_TESTS", "PLATFORM_HOSTED", "RUN_WITH_PROFILING"],
+            "includePath": [
+                "${default}",
+                "ursaworks-control-project/taproot/sim-modm/hosted-linux/modm/src",
+                "ursaworks-control-project/taproot/test",
+                "ursaworks-control-project/test"
+            ],
+            "compilerPath": "g++",
+            "intelliSenseMode": "gcc-x64",
+            "browse": { "limitSymbolsToIncludedHeaders": true }
+        },
+        {
+            "name": "Sim",
+            "defines": ["${default}", "PLATFORM_HOSTED", "RUN_WITH_PROFILING"],
+            "includePath": [
+                "${default}",
+                "ursaworks-control-project/taproot/sim-modm/hosted-linux/modm/src"
+            ],
+            "compilerPath": "g++",
+            "intelliSenseMode": "gcc-x64",
+            "browse": { "limitSymbolsToIncludedHeaders": true }
+        },
+        {
+            "name": "Hardware",
+            "includePath": [
+                "${default}",
+                "ursaworks-control-project/taproot/modm/src",
+                "ursaworks-control-project/taproot/modm/ext/cmsis/core",
+                "ursaworks-control-project/taproot/modm/ext/cmsis/device",
+                "ursaworks-control-project/taproot/modm/ext/cmsis/dsp"        
+            ],
+            "compilerPath": "arm-none-eabi-g++",
+            "intelliSenseMode": "gcc-arm",
+            "browse": { "limitSymbolsToIncludedHeaders": true }
+        }
+    ],
+    "version": 4
+}
