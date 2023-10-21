@@ -1,26 +1,13 @@
-<<<<<<< Updated upstream
 # ursaworks-control
-=======
-[![pipeline status](https://gitlab.com/aruw/controls/ursaworks-control/badges/develop/pipeline.svg)](https://gitlab.com/aruw/controls/ursaworks-control/-/commits/develop)
 
-
-## Resources
-
-- **The [Taproot wiki](https://gitlab.com/aruw/controls/taproot/-/wikis/home). It has lots of content and we strongly recommend you browse through it to get a sense of
-  what's there.**
-- [aruw-edu](https://gitlab.com/aruw/controls/aruw-edu): a hands-on tutorial for building robot code with Taproot
-- [aruw-mcb](https://gitlab.com/aruw/controls/aruw-mcb), ARUW's full robot code project available for reference
-- The [generated API documentation for Taproot](https://aruw.gitlab.io/controls/taproot/)
-- The [modm website](https://modm.io/) and associated documentation
+> Dont run '''lbuild build''' if you are not sure what it does, that might update your local taproot
+environment which our code base does not currently support.
 
 ## New user guide
 
 ### Setting up a development environment
 
-If you want the easiest setup experience and **_do not_ require deploying code to hardware**,
-consider developing within the provided [Docker container](https://gitlab.com/aruw/controls/taproot/-/wikis/Docker-Container-Setup).
-
-Otherwise, follow the guide appropriate for your operating system.
+Follow the guide appropriate for your operating system.
 - Linux
   - Debian: https://gitlab.com/aruw/controls/taproot/-/wikis/Debian-Linux-Setup
   - Fedora: https://gitlab.com/aruw/controls/taproot/-/wikis/Fedora-Linux-Setup
@@ -39,25 +26,11 @@ pipenv install
 
 ### Getting started with this repo
 
-_Make sure you have followed the above setup instructions._
 
-Run the following to clone this repository:
-
-```
-git clone --recursive https://gitlab.com/my-team/my-amazing-project.git
-```
-
-If you use the Docker container, or have already cloned the repository yourself, you should instead
-run:
+`cd` into the project directory, activate the virtualenv, and run some builds:
 
 ```
-git submodule update --init --recursive
-```
-
-Now, `cd` into the project directory, activate the virtualenv, and run some builds:
-
-```
-cd my-amazing-project/ursaworks-control-project
+cd ursaworks-control/ursaworks-control-project
 pipenv shell
 # Build for hardware
 scons build
@@ -173,4 +146,3 @@ Usage: scons <target> [profile=<debug|release|fast>] [robot=TARGET_<ROBOT_TYPE>]
         - <ROBOT_TYPE> must be one of the following:
             - STANDARD, DRONE, ENGINEER, SENTRY, HERO:
 ```
->>>>>>> Stashed changes
